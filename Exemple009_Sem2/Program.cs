@@ -19,7 +19,6 @@ int MaxDigit (int num)
     int secondDigit = num % 10;
     if (firstDigit == secondDigit) return 0;
     return firstDigit > secondDigit ? firstDigit : secondDigit;
-  
 }
 int maxDigit = MaxDigit(rndNum);
 string result = maxDigit > 0 ? maxDigit.ToString() : "Цифры одиннаковые";

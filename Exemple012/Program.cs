@@ -9,11 +9,15 @@ int num1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите второе число: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
 int remainder = num1 % num2;
-bool Method(int num1, int num2){
+bool Method(int num1, int num2)
+{
 if(num1%num2 == 0) return true;
  return false;
 }
-bool met = Metod(num1, num2);
-string result = Metod == true ? "кратно" : "не кратно, остаток {remainder}";
+bool met = Method(num1, num2);
+string result = met == true ? $"число {num2} кратно {num1}" : $"не кратно, остаток {remainder}";
+Console.WriteLine($"{result}");
 
-
+// int maxDigit = MaxDigit(rndNum);
+// string result = maxDigit > 0 ? maxDigit.ToString() : "Цифры одиннаковые";
+// Console.WriteLine($"Наибольшая цифра числа {rndNum} => {result}");
